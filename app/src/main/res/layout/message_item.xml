@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lv_bord">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TxMessageTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:capitalize="characters"
+        android:inputType="textCapCharacters"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IvMessage"
+        android:layout_below="@+id/TxMessageTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:maxHeight="200dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/TxMessageDescritption"
+        android:layout_below="@+id/IvMessage"
+        android:layout_alignLeft="@+id/IvMessage"
+        android:layout_alignStart="@+id/IvMessage"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxMessageDateStart"
+        android:layout_alignBottom="@+id/TxMessageTitle"
+        android:layout_toRightOf="@+id/TxMessageDateEnd"
+        android:layout_toEndOf="@+id/TxMessageDateEnd"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:textStyle="bold"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxMessageDateEnd"
+        android:layout_alignBottom="@+id/TxMessageTitle"
+        android:layout_toRightOf="@+id/TxMessageTitle"
+        android:layout_toEndOf="@+id/TxMessageTitle"
+        android:textStyle="bold"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/textView57"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@+id/TxMessageDateStart"
+        android:layout_alignBottom="@+id/TxMessageDateStart"
+        android:layout_toRightOf="@+id/TxMessageDateEnd"
+        android:layout_toEndOf="@+id/TxMessageDateEnd"
+        android:textStyle="bold" />
+
+</RelativeLayout>

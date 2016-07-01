@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Red Crescent App</string>
+    <string name="title_activity_main">Red Crescent</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="Menu_Array_anonym">
+        <item>Map</item>
+        <item>Emergency guide</item>
+        <item>Login</item>
+    </string-array>
+    <string-array name="Menu_Array_user">
+        <item>Map</item>
+        <item>Emergency guide</item>
+        <item>News feed</item>
+        <item>settings</item>
+        <item>Logout</item>
+
+    </string-array>
+    <string-array name="Audience">
+        <item>Admins</item>
+        <item>Members</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">519757734868044</string>
+    <string name="BtSubmitAccident">Submit</string>
+    <string name="title_activity_reverse_maps">Map</string>
+    <string name="title_activity_reverse_map">Reverse_map</string>
+    <string name="add_widget">Add widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+
+    >
+
+    <!-- title -->
+
+    <!--  divider -->
+
+    <TextView
+        android:id="@+id/newsfeedNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:textSize="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:text="[1]"
+        android:textColor="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true" />
+
+    <!--  divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DADADC"></View>
+
+</RelativeLayout>

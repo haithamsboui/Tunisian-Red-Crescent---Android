@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ReportAccidentFragment"
+    android:background="?attr/colorPrimaryDark">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout3"
+        android:layout_alignParentStart="false"
+        android:background="#FFF">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/IvAccident"
+            android:src="@drawable/accident"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:adjustViewBounds="true" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtSubmitAccident"
+        android:id="@+id/BtSubmitAccident"
+        android:background="#FFF"
+        android:textColor="?attr/colorPrimaryDark"
+        android:layout_below="@+id/TxDescriptionAccident"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxDescriptionAccident"
+        android:inputType="none"
+        android:hint="Description"
+        android:minHeight="150dp"
+        android:gravity="start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout3"
+        android:layout_margin="10dp"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

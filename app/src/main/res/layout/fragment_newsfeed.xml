@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Fragments.NewsfeedFragment"
+    android:background="#E9EAED"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IvSendMessagePhoto"
+        android:src="@drawable/comment_plus_outline"
+        android:layout_gravity="right"
+        android:minWidth="45dp"
+        android:minHeight="45dp"
+        android:clickable="true"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:visibility="visible"
+        android:background="#E9EAED" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LvMessage"
+        android:smoothScrollbar="true"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:divider="#E9EAED"
+        android:dividerHeight="10dp"
+        android:layout_gravity="right|top"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/IvSendMessagePhoto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Send message"
+        android:id="@+id/textView58"
+        android:layout_above="@+id/LvMessage"
+        android:layout_toStartOf="@+id/IvSendMessagePhoto"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:background="#E9EAED" />
+
+</RelativeLayout>

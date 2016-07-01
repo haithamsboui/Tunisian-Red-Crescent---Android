@@ -1,0 +1,18 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=02:22:33:F1:62:74:AA:3E:44:D3:8E:F4:78:EE:B7:AF:85:82:F5:0E%3Bcom.esprit.redcrossapp
+
+    You can also add your credentials to an existing key, using this line:
+    02:22:33:F1:62:74:AA:3E:44:D3:8E:F4:78:EE:B7:AF:85:82:F5:0E;com.esprit.redcrossapp
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        YOUR_KEY_HERE
+    </string>
+</resources>

@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.SignupFragment"
+    android:background="?attr/colorPrimaryDark">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/BtSubmitSign"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxWidth="300dp"
+        android:textColor="?attr/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/TxFirstnameSign"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true"
+            android:hint="First name"
+            android:layout_marginBottom="5dp"
+            android:minHeight="55dp"
+            android:minWidth="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/TxLastnameSign"
+            android:layout_below="@+id/TxFirstnameSign"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Last name"
+
+            android:layout_marginBottom="5dp"
+            android:minWidth="300dp"
+            android:minHeight="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/TxPasswordSign"
+            android:layout_below="@+id/TxLastnameSign"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Password"
+            android:layout_marginBottom="5dp"
+            android:minWidth="300dp"
+            android:minHeight="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:shadowColor="#FFF"
+            android:password="true"
+            android:elegantTextHeight="false" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/TxemailSign"
+            android:layout_below="@+id/TxPasswordSign"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Email"
+            android:layout_marginBottom="5dp"
+            android:minWidth="300dp"
+            android:minHeight="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/TxBirthdate"
+            android:layout_below="@+id/TxemailSign"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Birth date"
+            android:layout_marginBottom="5dp"
+            android:minWidth="300dp"
+            android:minHeight="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="300dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_above="@+id/TxUsername"
+        android:id="@+id/frameLayout2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView19"
+            android:layout_above="@+id/TxUsername"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:src="@drawable/croissant"
+            android:padding="20dp"
+            android:minHeight="100dp"
+            android:maxHeight="200dp" />
+    </FrameLayout>
+
+</RelativeLayout>

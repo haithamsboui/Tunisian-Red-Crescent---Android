@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LoginFragment"
+    android:background="?attr/colorPrimaryDark"
+    android:id="@+id/loginfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/TxUsername"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_above="@+id/TxUsername"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:src="@drawable/croissant"
+            android:padding="50dp" />
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxUsername"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:minHeight="60dp"
+        android:hint="ID"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:minWidth="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TxPassword"
+        android:layout_below="@+id/TxUsername"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:minHeight="60dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:minWidth="300dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/BtLogin"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/TxPassword"
+        android:layout_alignRight="@+id/TxPassword"
+        android:layout_alignEnd="@+id/TxPassword"
+        android:textColor="?attr/colorPrimaryDark"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:layout_marginLeft="10dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtLoginFacebook"
+        android:layout_alignTop="@+id/BtLogin"
+        android:layout_toLeftOf="@+id/BtLogin"
+        android:layout_toStartOf="@+id/BtLogin"
+        android:layout_above="@+id/TxSignup"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Not a member ? Sign up"
+        android:id="@+id/TxSignup"
+        android:textColor="#FFF"
+        android:layout_below="@+id/BtLogin"
+        android:layout_alignRight="@+id/BtLogin"
+        android:layout_alignEnd="@+id/BtLogin"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:onClick="onClick" />
+
+</RelativeLayout>

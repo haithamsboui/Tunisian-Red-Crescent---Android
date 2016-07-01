@@ -1,0 +1,1836 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EmergencyguideFagment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@+id/sostab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scrollIndicators="left|start|end|right">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorPrimaryDark"
+                        android:focusableInTouchMode="false"
+                        android:scrollIndicators="left|start|end|right"
+                        android:showDividers="middle|beginning|end"
+                        android:tabStripEnabled="true"></TabWidget>
+                </HorizontalScrollView>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryDark">
+
+                    <LinearLayout
+                        android:id="@+id/sosHome"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFF"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="?attr/colorPrimaryDark"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView28"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:text="Police"
+                                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView33"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_marginLeft="42dp"
+                                                android:layout_marginStart="42dp"
+                                                android:text="197"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="#FFF"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold|italic" />
+
+                                            <ImageButton
+                                                android:id="@+id/BtCalPolice"
+                                                android:layout_width="36dp"
+                                                android:layout_height="36dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:background="?attr/colorPrimaryDark"
+                                                android:gravity="right"
+                                                android:src="@drawable/ic_phone_forward_white_18dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/linearLayout3"
+                                        android:background="?attr/colorPrimaryDark"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:text="Ambulance "
+                                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView23"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginLeft="45dp"
+                                                android:layout_marginTop="6dp"
+                                                android:text="190"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="#FFF"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold|italic" />
+
+                                            <ImageButton
+                                                android:id="@+id/BtcallAmbulance"
+                                                android:layout_width="36dp"
+                                                android:layout_height="36dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentTop="true"
+                                                android:background="?attr/colorPrimaryDark"
+                                                android:src="@drawable/ic_phone_forward_white_18dp" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignEnd="@+id/linearLayout5"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_below="@+id/linearLayout2"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="?attr/colorPrimaryDark"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView36"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:text="Fire Department"
+                                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView44"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginLeft="45dp"
+                                                android:layout_marginTop="6dp"
+                                                android:text="198"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="#FFF"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold|italic" />
+
+                                            <ImageButton
+                                                android:id="@+id/BtCallFire"
+                                                android:layout_width="36dp"
+                                                android:layout_height="36dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentTop="true"
+                                                android:background="?attr/colorPrimaryDark"
+                                                android:src="@drawable/ic_phone_forward_white_18dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignEnd="@+id/linearLayout5"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_below="@+id/linearLayout5"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="?attr/colorPrimaryDark"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView48"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:text="Anti-Poison Center"
+                                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView52"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginLeft="45dp"
+                                                android:layout_marginTop="6dp"
+                                                android:text="71.335.500"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="#FFF"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold|italic" />
+
+                                            <ImageButton
+                                                android:id="@+id/BtCallAntiPoison"
+                                                android:layout_width="36dp"
+                                                android:layout_height="36dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_alignParentTop="true"
+                                                android:background="?attr/colorPrimaryDark"
+                                                android:src="@drawable/ic_phone_forward_white_18dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="false"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="false"
+                                        android:layout_below="@+id/linearLayout4"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="?attr/colorPrimaryDark"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView64"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:text="Red crescent Tunisia"
+                                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView65"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginLeft="45dp"
+                                                android:layout_marginTop="6dp"
+                                                android:text="+216 71 320 630"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                                android:textColor="#FFF"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold|italic" />
+
+                                            <ImageButton
+                                                android:id="@+id/BtCallCrt"
+                                                android:layout_width="36dp"
+                                                android:layout_height="36dp"
+
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="false"
+                                                android:layout_alignParentTop="false"
+                                                android:background="?attr/colorPrimaryDark"
+                                                android:src="@drawable/ic_phone_forward_white_18dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sosBleeding"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/YoutubeBleeding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/YoutubeBleeding"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView13"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Put pressure on the wound with whatever is available to stop or slow down the flow of blood. " />
+
+                                            <TextView
+                                                android:id="@+id/TxBleedingmore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView13"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView3"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView13"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView3"
+                                                android:layout_alignEnd="@+id/imageView3"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView3"
+                                                android:layout_alignTop="@+id/textView13"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/TxBleedingmorelayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/TxBleedingmoreContent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="You are acting as a &apos;plug&apos; to stop the blood escaping. The pressure you provide will help the blood clot and stop the bleeding."
+                                                android:visibility="visible" />
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView17"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="Keep pressure on the wound until help arrives." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView4"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView17"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView19"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView4"
+                                            android:layout_alignEnd="@+id/imageView4"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView4"
+                                            android:layout_alignTop="@+id/textView17"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="2"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView18"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="Call emergency as soon as possible, or get someone else to do it." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView5"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView18"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView20"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView5"
+                                            android:layout_alignEnd="@+id/imageView5"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView5"
+                                            android:layout_alignTop="@+id/textView18"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="3"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sosStroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ScrollView
+                            android:id="@+id/scrollView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/youtube_fragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/youtube_fragment"
+                                    android:background="?attr/colorPrimaryDark"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:scrollIndicators="top|bottom|start">
+
+                                            <TextView
+                                                android:id="@+id/textView15"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="100dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Think F.A.S.T. Face: is there weakness on one side of their face? Arms: can they raise both arms? Speech: is their speech easily understood? Time: to call emergency." />
+
+                                            <TextView
+                                                android:id="@+id/TxStrokemore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView15"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView15"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView21"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView"
+                                                android:layout_alignEnd="@+id/imageView"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView"
+                                                android:layout_alignTop="@+id/textView15"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/StrokemoreLayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView22"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="Strokes are caused by a blockage of the blood supply to the brain. Part of the brain becomes damaged, and this can affect people’s appearance, bodily functions, speech and sight."
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView16"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="90dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Immediately call emergency or get someone else to do it." />
+
+                                            <TextView
+                                                android:id="@+id/TxStrokemore1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView16"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView6"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView16"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView24"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView6"
+                                                android:layout_alignEnd="@+id/imageView6"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView6"
+                                                android:layout_alignTop="@+id/textView16"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="2"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/StrokemoreLayout1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView25"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  A stroke needs immediate attention, and the faster the person receives medical help, the less damage is caused.  Talk to the person to reassure them while you wait for the ambulance."
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/soschoking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/youtubechoking"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/youtubechoking"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView51"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Hit them firmly on their back between the shoulder blades to dislodge the object." />
+
+                                            <TextView
+                                                android:id="@+id/txchokingmore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView51"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView17"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView51"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView53"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView17"
+                                                android:layout_alignEnd="@+id/imageView17"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView17"
+                                                android:layout_alignTop="@+id/textView51"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/TxChokingmorelayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView54"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="This creates a strong vibration and pressure in the airway, which is often enough to dislodge the blockage. Dislodging the object will allow them to breathe again."
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView55"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="If necessary, call emergency or get someone else to do it." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView18"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView55"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView56"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView18"
+                                            android:layout_alignEnd="@+id/imageView18"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView18"
+                                            android:layout_alignTop="@+id/textView55"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="2"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sosheadinjury"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/youtubeheadinjury"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/youtubeheadinjury"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView47"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="If they become drowsy or vomit, call emergency or get someone else to do it." />
+
+                                            <TextView
+                                                android:id="@+id/TxMoreHead"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView47"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView15"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView47"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView49"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView15"
+                                                android:layout_alignEnd="@+id/imageView15"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView15"
+                                                android:layout_alignTop="@+id/textView47"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="2"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/headinjurymore"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView50"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  This could be a sign of a serious injury to the head. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView43"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Ask them to rest and apply something cold to the injury (e.g. frozen vegetables wrapped in a tea towel)." />
+
+                                            <TextView
+                                                android:id="@+id/TxMoreHead1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView43"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView14"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView43"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView45"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView14"
+                                                android:layout_alignEnd="@+id/imageView14"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView14"
+                                                android:layout_alignTop="@+id/textView43"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/headinjurymore1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView46"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  Applying something cold to the injury will reduce external swelling and pain. In addition to external swelling, when a person suffers a blow to the head, the brain can be shaken inside the skull. This may result in a more serious head injury (e.g. concussion), which may make them feel sick or drowsy. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sosbrokenbone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/Brokenboneyoutube"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/Brokenboneyoutube"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView35"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Encourage the person to support the injury with their hand, or use a cushion or items of clothing to prevent unnecessary movement." />
+
+                                            <TextView
+                                                android:id="@+id/TxBrokenBone"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView35"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView11"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView35"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView37"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView11"
+                                                android:layout_alignEnd="@+id/imageView11"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView11"
+                                                android:layout_alignTop="@+id/textView35"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/BrokenBoneLayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView38"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  Supporting the injury may give pain relief and prevent further damage. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView39"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="As soon as possible, call emergency or get someone else to do it." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView12"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView39"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView40"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView12"
+                                            android:layout_alignEnd="@+id/imageView12"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView12"
+                                            android:layout_alignTop="@+id/textView39"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="2"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView41"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="Continue supporting the injury until help arrives." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView13"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView41"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView42"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView13"
+                                            android:layout_alignEnd="@+id/imageView13"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView13"
+                                            android:layout_alignTop="@+id/textView41"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="3"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sosheartattack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/scrollView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/youtubeheart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="250dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="false"
+                                    android:layout_below="@+id/youtubeheart"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView27"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="The person may have persistent, vice-like chest pain, which may spread to their arms, neck, jaw, back or stomach." />
+
+                                            <TextView
+                                                android:id="@+id/TxHeartmore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView27"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView8"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView27"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView29"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView8"
+                                                android:layout_alignEnd="@+id/imageView8"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView8"
+                                                android:layout_alignTop="@+id/textView27"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="1"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/HeartmoreLayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView30"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  This pain is caused by a blockage of the blood supply to the heart muscle, and the pain will not ease with rest. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView26"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Call emergency immediately or get someone else to do it." />
+
+                                            <TextView
+                                                android:id="@+id/TxHeartmore1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView26"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView7"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView26"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView34"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView7"
+                                                android:layout_alignEnd="@+id/imageView7"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView7"
+                                                android:layout_alignTop="@+id/textView26"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="2"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/HeartmoreLayout1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView59"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  The person must receive medical assistance as soon as possible, because a heart attack is potentially very serious and needs immediate attention. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/textView60"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_marginTop="18dp"
+                                                android:background="#FFF"
+                                                android:minHeight="75dp"
+                                                android:paddingLeft="75dp"
+                                                android:paddingTop="10dp"
+                                                android:text="Make sure they are in a position that is comfortable for them (e.g. sit them on the floor, leaning against a wall or chair)." />
+
+                                            <TextView
+                                                android:id="@+id/TxHeartmore2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/textView60"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:background="#D32F2F"
+                                                android:clickable="true"
+                                                android:contextClickable="true"
+                                                android:onClick="onClick"
+                                                android:paddingBottom="2dp"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingTop="2dp"
+                                                android:text="more .."
+                                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+
+                                            <ImageView
+                                                android:id="@+id/imageView10"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignTop="@+id/textView60"
+                                                android:background="@drawable/orderholder" />
+
+                                            <TextView
+                                                android:id="@+id/textView62"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBottom="@+id/imageView10"
+                                                android:layout_alignEnd="@+id/imageView10"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignRight="@+id/imageView10"
+                                                android:layout_alignTop="@+id/textView60"
+                                                android:gravity="center_vertical|center_horizontal"
+                                                android:text="3"
+                                                android:textColor="#FFF"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/HeartmoreLayout2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_alignParentEnd="false"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:background="#FFF"
+                                            android:visibility="gone">
+
+                                            <TextView
+                                                android:id="@+id/textView63"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="5dp"
+                                                android:gravity="center"
+                                                android:paddingLeft="10dp"
+                                                android:paddingRight="10dp"
+                                                android:text="  This will ease the strain on the heart. Sitting them on the floor means they are less likely to hurt themselves if they collapse. "
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView31"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="18dp"
+                                            android:background="#FFF"
+                                            android:minHeight="75dp"
+                                            android:paddingLeft="75dp"
+                                            android:paddingTop="10dp"
+                                            android:text="Give them constant reassurance while waiting for the ambulance." />
+
+                                        <ImageView
+                                            android:id="@+id/imageView9"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignTop="@+id/textView31"
+                                            android:background="@drawable/orderholder" />
+
+                                        <TextView
+                                            android:id="@+id/textView32"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBottom="@+id/imageView9"
+                                            android:layout_alignEnd="@+id/imageView9"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignRight="@+id/imageView9"
+                                            android:layout_alignTop="@+id/textView31"
+                                            android:gravity="center_vertical|center_horizontal"
+                                            android:text="4"
+                                            android:textColor="#FFF"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </TabHost>
+
+    </RelativeLayout>
+</FrameLayout>
